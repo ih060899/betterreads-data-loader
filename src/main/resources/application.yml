@@ -1,21 +1,27 @@
+datadump.location:
+    author: D:\\library\\betterreads-webapp-master\\test-authors.txt
+    works: D:\\library\\betterreads-webapp-master\\test-works.txt
+
 spring:
     data:
         cassandra:
             keyspace-name: main
-            username: ZpSLlxvNfAsnZhdrOdUEWlvj
-            password: CbH4Ai.oZi0sjY_3Az8Yh2ZWy_n_8ziERtz4z-S37-bA-PrlIypfmX.STfc_jgCbN57kAtMOjSr3RoG5k4ZFSj5zi0iHrjG2gcwR6Sa7RgZy,0I-KvLGddBZdSL0Ofud
+            username: NyTjyCBZQrBsHjcILadSpjNI
+            password: qtwwRH1SGXx6ZBlL,RuKqoBgiKJnnCyG-JBDudoUTZRlQTaHJnDZicomNhTWfNZcSaQAQ+_SLd4dldSyjAHJO+zZgFv,9FRuaBUd.cG0jZIZHrjbxfwCbQ3hc_fFoSNk
             schema-action: create-if-not-exists
             request:
-                timeout: 30s
+                timeout: 10s
             connection:
-                connect-timeout: 30s
-                init-query-timeout: 30s
+                connect-timeout: 10s
+                init-query-timeout: 10s
 
 datastax.astra:
     secure-connect-bundle: secure-connect.zip
 
 astra.db:
-    id: e0e4c228-c10a-4b6b-b7ef-0200019c747a-1
-    region: us-east1
+    id: 4c6b4afd-620b-495a-8a9b-af27348f3c39-1
+    region: asia-south1
     keyspace: main
-    application.token: AstraCS:ZpSLlxvNfAsnZhdrOdUEWlvj:024b0226c1796cd9f2c7b497e49aad3c24f209dca1ba16bf060155d5d04f8441
+    application.token: AstraCS:NyTjyCBZQrBsHjcILadSpjNI:d662dc33d1c90cd2cc1fb40d998727f7f0f5c577ec4a26c39e05b03064434a36
+
+spring.main.allow-circular-references: true
